@@ -1,3 +1,5 @@
+import type React from "react";
+
 export interface SectionTitleProps {
     text1: string;
     text2: string;
@@ -60,4 +62,37 @@ export interface SectionProps {
     description: string;
     buttonText: string;
     buttonHref: string;
+}
+
+export interface UploadProps {
+    label: string;
+    file: File| null;
+    onClear: ()=>void;
+    onChange: (e:React.ChangeEvent<HTMLInputElement>)=> void;
+}
+
+export interface User {
+    id?: string;
+    name?: string;
+    email?: string
+}
+
+export interface Project {
+    id: string;
+    name?: string;
+    userid?: string;
+    user?: User;
+    productName: string;
+    productDescription?: string;
+    userPrompt?: string;
+    aspectRatio: string;
+    targetLength?: number;
+    generatedImage?: string;
+    generatedVideo?: string;
+    isGenerating: boolean;
+    isPublished: boolean;
+    error?: string;
+    createdAt: Date | string;
+    updatedAt?: Date | string;
+    uploadedImages: string[];
 }
