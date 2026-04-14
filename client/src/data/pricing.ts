@@ -3,7 +3,7 @@ import type { IPricing } from "../types";
 export const pricingData: IPricing[] = [
     {
         name: "Free",
-        price: 0,
+        price: 5,
         period: "month",
         features: [
             "20 Free Credits monthly",
@@ -17,7 +17,7 @@ export const pricingData: IPricing[] = [
     },
     {
         name: "Pro",
-        price: 6,
+        price: 9,
         period: "month",
         features: [
             "80 Monthly Credits",

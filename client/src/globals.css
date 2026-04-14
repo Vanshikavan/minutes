@@ -34,3 +34,10 @@ button {
         background-position: 0% 50%;
     }
 }
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
